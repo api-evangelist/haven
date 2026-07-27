@@ -1,7 +1,27 @@
 aid: haven
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/haven.png
 name: Haven
-description: Haven is a company surfaced as a portfolio company of dcvc and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Haven, Inc. was an ocean freight technology company founded in 2014 that built
+  software to automate quoting, booking, document management, and shipment
+  management for commodity producers, traders, and freight forwarders moving
+  international ocean cargo. Backed by DCVC, Haven was acquired by supply-chain
+  visibility platform FourKites in April 2021, and its technology became the
+  foundation of FourKites' Dynamic Ocean product for end-to-end international
+  ocean shipment visibility. Haven no longer operates an independent public
+  developer program or API; the Haven brand survives only as the "Haven
+  Marketplace" login at app.haveninc.com, now operated as part of FourKites.
 url: https://raw.githubusercontent.com/api-evangelist/haven/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +29,35 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: fourkites
+x-acquired-date: '2021-04-07'
+x-successor-product: FourKites Dynamic Ocean
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Ocean Freight
+- Supply Chain
+- Logistics
+- Shipping
+- Freight Visibility
+- International Trade
+- Acquired
+common:
+- type: Website
+  url: https://www.fourkites.com/haven/
+- type: Company
+  url: https://www.dcvc.com/companies/haven/
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
